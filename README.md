@@ -2,7 +2,7 @@
 
 Página do curso presencial de Gestão da Manutenção de Frotas e Máquinas Pesadas, importada do ZIP fornecido.
 
-A página completa está em `src/content/frotas.html`. O servidor a entrega em `/` e `/frotas-experience/`, preservando o documento original e os scripts do Elementor. Imagens, estilos, fontes e scripts locais ficam em `public/mirror/`.
+A página completa está em `public/frotas-experience/index.html`. A rota React inicial a exibe em um iframe que ocupa a tela, preservando os estilos e scripts do Elementor e a compatibilidade com a prévia do Lovable. A versão HTML também pode ser acessada diretamente em `/frotas-experience/index.html`. Imagens, estilos, fontes e scripts locais ficam em `public/mirror/`.
 
 As fontes corrompidas na exportação foram recuperadas das suas origens. Recursos ausentes no ZIP mantêm os endereços externos originais. Formulários, vídeos, checkout e WhatsApp continuam dependendo dos serviços da página de origem.
 

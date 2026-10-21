@@ -26,7 +26,7 @@ function inspect(file) {
   }
 }
 
-inspect(path.join(root, 'src/content/frotas.html'));
+inspect(path.join(root, 'public/frotas-experience/index.html'));
 console.log(`Checked ${visited.size - 1} local resources.`);
 if (missing.size) {
   console.error('Missing references:', [...missing]);
