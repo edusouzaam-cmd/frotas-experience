@@ -1,38 +1,46 @@
-import fs from "node:fs";
-import path from "node:path";
+import fs from 'node:fs';
+import path from 'node:path';
 
 const root = process.cwd();
-const sources = fs
-  .readdirSync("src", { recursive: true })
-  .filter((file) => /\.(tsx?|css)$/.test(file))
-  .map((file) => path.join("src", file));
-const assets = new Set();
-for (const file of sources) {
-  for (const match of fs
-    .readFileSync(file, "utf8")
-    .matchAll(/\/(?:images|fonts)\/[a-zA-Z0-9._-]+/g)) {
-    assets.add(match[0]);
+const publicRoot = path.join(root, 'public');
+const visited = new Set();
+const missing = new Set();
+
+function inspect(file) {
+  if (visited.has(file)) return;
+  visited.add(file);
+  if (!/\.(html|css|js)$/.test(file)) return;
+  const text = fs.readFileSync(file, 'utf8').replaceAll('\\/', '/');
+  for (const match of text.matchAll(/\/mirror\/[^\s"'<>`\\)\]}]+/g)) {
+    const url = match[0].replace(/[,;]+$/, '').replaceAll('&amp;', '&');
+    // Analytics scripts construct remote URLs from these prefixes at runtime.
+    if (/^\/mirror\/www\.google\.com\/?$/.test(url)) continue;
+    let target;
+    try {
+      target = path.resolve(publicRoot, '.' + decodeURIComponent(url.split(/[?#]/)[0]));
+    } catch {
+      missing.add(url);
+      continue;
+    }
+    if (!target.startsWith(publicRoot + path.sep)) throw new Error('Invalid asset path');
+    if (!fs.existsSync(target)) missing.add(url);
+    else inspect(target);
   }
 }
-// Gallery paths are built from their names in the component.
-for (const name of ["turma", "pratica", "encontro"]) assets.add(`/images/${name}.webp`);
-for (const asset of assets) {
-  const file = path.resolve(root, "public", "." + asset);
-  if (!fs.existsSync(file)) throw new Error(`Missing asset: ${asset}`);
-  const data = fs.readFileSync(file);
-  const signature = data.subarray(0, 4).toString();
-  if (
-    asset.endsWith(".webp") &&
-    (signature !== "RIFF" || data.subarray(8, 12).toString() !== "WEBP")
-  )
-    throw new Error(`Invalid WebP: ${asset}`);
-  if (asset.endsWith(".woff2") && signature !== "wOF2") throw new Error(`Invalid font: ${asset}`);
+
+inspect(path.join(root, 'public/frotas-experience/index.html'));
+console.log(`Checked ${visited.size - 1} local resources.`);
+if (missing.size) {
+  console.error('Missing references:', [...missing]);
+  process.exitCode = 1;
 }
-const images = fs.readdirSync("public/images");
-const bytes = images.reduce(
-  (sum, file) => sum + fs.statSync(path.join("public/images", file)).size,
-  0,
-);
-console.log(
-  `${assets.size} page resources verified; ${images.length} images total ${(bytes / 1024).toFixed(1)} KiB.`,
-);
+
+// Only files reachable from the supplied page belong in this import.
+if (process.argv.includes('--list-unused')) {
+  const mirrorRoot = path.join(publicRoot, 'mirror');
+  const unused = fs.readdirSync(mirrorRoot, { recursive: true })
+    .map((relative) => path.join(mirrorRoot, relative))
+    .filter((file) => fs.statSync(file).isFile() && !visited.has(file));
+  fs.writeFileSync(path.join(root, 'unused-assets.local'), unused.join('\n'));
+  console.log(`${unused.length} unrelated resources listed in unused-assets.local.`);
+}
