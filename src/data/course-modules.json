@@ -1,0 +1,84 @@
+[
+  {
+    "number": "01",
+    "title": "INTRODUÇÃO À GESTÃO DA MANUTENÇÃO DE FROTAS E MÁQUINAS PESADAS",
+    "topics": [
+      "01 – O que é Gestão da Manutenção?",
+      "02 – Diferenças entre a Gestão da Manutenção Industrial, Predial e de Frotas",
+      "03 – Aplicabilidade da Gestão da Manutenção de Frotas e Máquinas Pesadas",
+      "04 – Os Tipos de Manutenção e suas Aplicações (Manutenção Planejada e Não Planejada)",
+      "05 – Conceito de Confiabilidade, Função Requerida, Falha, Defeito e Pane (Aplicados à Curva PF)",
+      "06 – Diferenças entre Gestão de Máquinas Móveis e Equipamentos Estacionários"
+    ]
+  },
+  {
+    "number": "02",
+    "title": "ESTRUTURAÇÃO DO SISTEMA DE GESTÃO DA MANUTENÇÃO",
+    "topics": [
+      "07 – Inventário e Hierarquização dos Ativos",
+      "08 – Tagueamento dos Ativos",
+      "09 – Definição de Criticidade de Ativos",
+      "10 – Implantação da Solicitação de Serviço",
+      "11 – Implantação da Ordem de Serviço e Sistematização da Coleta de Dados",
+      "12 – Definição de Fluxo das Ordens de Serviço"
+    ]
+  },
+  {
+    "number": "03",
+    "title": "PLANEJAMENTO DA MANUTENÇÃO",
+    "topics": [
+      "13 – Elaboração de um Plano de Manutenção Preventiva",
+      "14 – Elaboração de um Plano de Lubrificação de Máquinas",
+      "15 – Elaboração de um Plano de Inspeções Sensitivas",
+      "16 – Elaboração de um Plano de Manutenção Preditiva",
+      "17 – Elaboração de um Plano de Manutenção e Controle de Pneus e Materiais Rodantes",
+      "18 – Sistematização de Laudos, Alarmes e Manutenções Condicionais em Ativos"
+    ]
+  },
+  {
+    "number": "04",
+    "title": "APROVISIONAMENTO DA MANUTENÇÃO",
+    "topics": [
+      "19 – Aquisição de Recursos para Execução do Plano de Manutenção",
+      "20 – Gestão Básica do Estoque de Sobressalentes",
+      "21 – Definição de Competências para Execução de Atividades (Matriz C.H.A)"
+    ]
+  },
+  {
+    "number": "05",
+    "title": "PROGRAMAÇÃO DA MANUTENÇÃO",
+    "topics": [
+      "22 – Estruturação de um Programa de Manutenção",
+      "23 – O Funil da Programação de Manutenção",
+      "24 – Gestão da Carteira de Serviços da Manutenção (Backlog)",
+      "25 – Priorização de Atividades de Manutenção com a Matriz RIME",
+      "26 – Teoria das Filas para Gestão de Tarefas",
+      "27 – Programação de atividades levando em conta Safra e Entresafra (grandes paradas)"
+    ]
+  },
+  {
+    "number": "06",
+    "title": "CONTROLE DA MANUTENÇÃO",
+    "topics": [
+      "28 – Organização dos Dados na Manutenção",
+      "29 – Matriz de Indicadores da Manutenção (Visão 3P’s)",
+      "30 – Os Indicadores Estratégicos da Manutenção",
+      "31 – Os Indicadores Táticos da Manutenção",
+      "32 – Os Indicadores Operacionais da Manutenção",
+      "33 – O Backlog da Manutenção Enquanto Indicador de Desempenho",
+      "34 – Mean Time Between Failures (MTBF) e Mean Time to Repair (MTTR)",
+      "35 – Disponibilidade Física, Inerente e Operacional",
+      "36 – Confiabilidade"
+    ]
+  },
+  {
+    "number": "07",
+    "title": "GESTÃO DE CUSTOS DA MANUTENÇÃO DE FROTAS E MÁQUINAS PESADAS",
+    "topics": [
+      "37 – Conceitos Fundamentais para Gestão de Custos de Manutenção",
+      "38 – Elaboração do Orçamento Anual de Manutenção e Operação da Frota",
+      "39 – LCC – Life Cycle Cost (Custo do Ciclo de Vida)",
+      "40 – Cálculo de Viabilidade de Substituição do Ativo com Base no CAUE – Custo Anual Uniforme Equivalente"
+    ]
+  }
+]
