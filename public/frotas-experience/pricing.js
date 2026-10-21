@@ -2,20 +2,20 @@
   const data = document.getElementById('fx-lots-data');
   if (!data) return;
   const lots = JSON.parse(data.textContent);
-  const title = document.getElementById('fx-calendar-title');
-  const timer = document.querySelector('.fx-timer');
+  const titles = document.querySelectorAll('#fx-calendar-title, #fx-hero-calendar-title');
+  const timers = document.querySelectorAll('.fx-timer');
   function update() {
     const now = Date.now();
     const active = lots.find(lot => now >= Date.parse(lot.opensAt) && now < Date.parse(lot.closesAt));
     const next = lots.find(lot => now < Date.parse(lot.opensAt));
     const target = active ? Date.parse(active.closesAt) : next ? Date.parse(next.opensAt) : null;
     const label = active ? (active.id === 3 ? 'As inscrições encerram em' : 'O próximo lote começa em') : next ? 'As inscrições abrem em 26 de outubro' : 'Inscrições encerradas para esta turma';
-    if (title.textContent !== label) title.textContent = label;
-    timer.hidden = target === null;
+    titles.forEach(title => { if (title.textContent !== label) title.textContent = label; });
+    timers.forEach(timer => { timer.hidden = target === null; });
     if (target !== null) {
       const seconds = Math.max(0, Math.ceil((target - now) / 1000));
       const remaining = [Math.floor(seconds / 86400), Math.floor(seconds / 3600) % 24, Math.floor(seconds / 60) % 60, seconds % 60];
-      timer.querySelectorAll('[data-time]').forEach((el, i) => { el.textContent = String(remaining[i]).padStart(2, '0'); });
+      timers.forEach(timer => timer.querySelectorAll('[data-time]').forEach((el, i) => { el.textContent = String(remaining[i]).padStart(2, '0'); }));
     }
     lots.forEach(lot => {
       const card = document.querySelector(`.fx-lot[data-lot="${lot.id}"]`);

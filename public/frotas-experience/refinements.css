@@ -219,3 +219,108 @@ html, body { background: #000 !important; color: #ededed; }
   .elementor-104161 .elementor-element.elementor-element-9dbfd66 .elementor-heading-title { font-size:34px; }
   .elementor-104161 > .elementor-element.elementor-element-2c61eaa::before { background-position:35% center !important; opacity:.18; }
 }
+
+/* Teacher: consistent photo clipping and restrained gold glow. */
+.elementor-104161 .elementor-element.elementor-element-bcd2874 { color:#000 !important; }
+.elementor-104161 .elementor-element.elementor-element-bcd2874 p { display:inline-block; color:#000 !important; background:#d5b361; border-radius:100px; padding:10px 24px; margin:0; font-size:clamp(20px,2.4vw,28px); line-height:1.4; }
+.elementor-104161 .elementor-element.elementor-element-d815508 { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.25fr); gap:36px; padding:32px; align-items:center; border-radius:24px; background:#0b0b0c !important; border:1px solid #242424; transition:box-shadow .4s ease,border-color .4s ease; }
+.elementor-104161 .elementor-element.elementor-element-d97f0dd,
+.elementor-104161 .elementor-element.elementor-element-15e7d03 { width:100%; --width:100%; min-width:0; }
+.elementor-104161 .elementor-element.elementor-element-d97f0dd { margin:0; padding:0; border-radius:16px; overflow:hidden; align-self:center; }
+.elementor-104161 .elementor-element.elementor-element-d97f0dd > .elementor-widget-container { border-radius:16px; overflow:hidden; margin:0; padding:0; }
+.elementor-104161 .elementor-element.elementor-element-d97f0dd img { display:block; width:100%; height:auto; max-height:none; aspect-ratio:1; object-fit:cover; border-radius:16px !important; }
+.elementor-104161 .elementor-element.elementor-element-a4c69c9 { overflow:visible; }
+@media(hover:hover) {
+  .elementor-104161 .elementor-element.elementor-element-d815508:hover { border-color:#b08b3c88; box-shadow:0 0 32px 4px #e7b52e1c,0 0 72px 12px #e7b52e0c; }
+}
+@media(max-width:767px) {
+  .elementor-104161 .elementor-element.elementor-element-d815508 { grid-template-columns:minmax(0,1fr); padding:20px; gap:28px; }
+  .elementor-104161 .elementor-element.elementor-element-bcd2874 p { padding:10px 18px; }
+}
+@media(prefers-reduced-motion:reduce) { .elementor-104161 .elementor-element.elementor-element-d815508 { transition:none; } }
+
+/* One type system through testimonials, bonuses, venue and footer. */
+.elementor-104161 :is(.elementor-widget-heading,.elementor-widget-text-editor,.elementor-icon-list-text,.elementor-icon-box-title,.elementor-icon-box-description,.elementor-button-text),
+.elementor-104161 :is(.elementor-widget-heading,.elementor-widget-text-editor) :is(p,span,strong,b,em,i,h1,h2,h3,h4,a) { font-family:'Poppins',sans-serif !important; }
+.elementor-104161 .elementor-element.elementor-element-57657b0 > .e-con-inner { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:28px; align-items:stretch; }
+.elementor-104161 .elementor-element.elementor-element-9b283d5,
+.elementor-104161 .elementor-element.elementor-element-8434519 { width:100%; --width:100%; min-width:0; }
+.elementor-104161 .elementor-element.elementor-element-d511d6f,
+.elementor-104161 .elementor-element.elementor-element-8434519 { height:100%; padding:28px; border:1px solid #242424; border-radius:24px; background:#0b0b0c !important; transition:box-shadow .4s ease,border-color .4s ease; }
+.elementor-104161 .elementor-element.elementor-element-f83084f { margin:0 0 20px; padding:0; border-radius:16px; overflow:hidden; }
+.elementor-104161 .elementor-element.elementor-element-f83084f > .elementor-widget-container { margin:0; padding:0; border-radius:16px; overflow:hidden; }
+.elementor-104161 .elementor-element.elementor-element-f83084f img { display:block; width:100%; height:auto; aspect-ratio:1.4; object-fit:cover; border-radius:16px !important; }
+.elementor-104161 .elementor-element.elementor-element-57657b0 .elementor-icon-list-text { font-size:15px; line-height:1.75; color:#c6c6cc; }
+.elementor-104161 .elementor-element.elementor-element-57657b0 .elementor-widget-text-editor { color:#ededf0; line-height:1.65; }
+.elementor-104161 .elementor-element.elementor-element-57657b0 .elementor-icon-list-items { display:grid; gap:14px; }
+.elementor-104161 .elementor-element.elementor-element-57657b0 .elementor-icon-list-item { align-items:flex-start; }
+.elementor-104161 .elementor-element.elementor-element-f153462 { font-size:23px; font-weight:600; }
+.elementor-104161 .elementor-element.elementor-element-57657b0 { overflow:visible; }
+@media(hover:hover) {
+  .elementor-104161 .elementor-element.elementor-element-d511d6f:hover,
+  .elementor-104161 .elementor-element.elementor-element-8434519:hover { border-color:#b08b3c88; box-shadow:0 0 32px 4px #e7b52e1c,0 0 72px 12px #e7b52e0c; }
+}
+.elementor-104161 .elementor-element.elementor-element-6cfb146 .elementor-button {
+  background:linear-gradient(115deg,#f1cf73 0%,#dba72c 48%,#b77b10 100%) !important;
+  color:#171106 !important; fill:#171106 !important; border:1px solid #edc66b60; border-radius:16px !important;
+  padding:19px 32px; min-height:58px; font-family:'Poppins',sans-serif !important; font-size:17px; font-weight:600;
+  box-shadow:0 8px 30px #d6a10d22; animation:none !important; transition:box-shadow .25s ease,transform .25s ease;
+}
+.elementor-104161 .elementor-element.elementor-element-6cfb146 .elementor-button:hover { transform:translateY(-2px); box-shadow:0 10px 36px #e7b52e38; }
+.elementor-104161 .elementor-element.elementor-element-22561e6,
+.elementor-104161 .elementor-element.elementor-element-22561e6 :is(.e-con,.elementor-section,.elementor-widget-wrap) { background:#000 !important; background-image:none !important; }
+.elementor-104161 .elementor-element.elementor-element-22561e6::before,
+.elementor-104161 .elementor-element.elementor-element-22561e6 .e-con::before { background:none !important; }
+.elementor-104161 .elementor-element.elementor-element-0898261 { color:#a4a4ac; font-size:12px; line-height:1.85; }
+.elementor-104161 .elementor-element.elementor-element-0898261 strong { color:#d5d5da; font-weight:500; }
+.elementor-104161 .elementor-element.elementor-element-0898261 a { color:#c5a562; }
+@media(max-width:767px) {
+  .elementor-104161 .elementor-element.elementor-element-57657b0 > .e-con-inner { grid-template-columns:minmax(0,1fr); gap:24px; }
+  .elementor-104161 .elementor-element.elementor-element-d511d6f,
+  .elementor-104161 .elementor-element.elementor-element-8434519 { padding:22px; }
+  .elementor-104161 .elementor-element.elementor-element-6cfb146 .elementor-button { width:100%; padding:18px 20px; font-size:15px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .elementor-104161 .elementor-element.elementor-element-d511d6f,
+  .elementor-104161 .elementor-element.elementor-element-8434519,
+  .elementor-104161 .elementor-element.elementor-element-6cfb146 .elementor-button { transition:none; }
+}
+
+/* Brighter mining photo, with a localized overlay behind the copy. */
+.elementor-104161 > .elementor-element.elementor-element-2c61eaa::before { opacity:.44; }
+.elementor-104161 > .elementor-element.elementor-element-2c61eaa::after { background:linear-gradient(90deg,#0009,#0003 65%,#0005),linear-gradient(0deg,#000,transparent 30%,#0002); }
+.fx-gallery { width:100%; min-width:0; align-self:center; }
+.fx-gallery-window { overflow:hidden; width:100%; border-radius:22px; background:#101010; }
+.fx-gallery-track { display:flex; width:100%; transition:transform .65s cubic-bezier(.22,.7,.22,1); }
+.fx-gallery-slide { flex:0 0 100%; width:100%; min-width:0; aspect-ratio:4 / 5; }
+.fx-gallery-slide img { display:block; width:100%; height:100%; object-fit:cover; object-position:center; }
+.fx-gallery-controls { display:flex; align-items:center; justify-content:center; gap:16px; padding:18px 0 0; }
+.fx-gallery-controls button { display:grid; place-items:center; min-width:44px; min-height:44px; border:1px solid #282828; border-radius:100px; background:#101010; color:#dabb70; font:500 14px/1 Poppins,sans-serif; cursor:pointer; padding:10px 14px; }
+.fx-gallery-controls button:hover { background:#1d1a12; }
+.fx-gallery-controls button:focus-visible { outline:2px solid #dabb70; outline-offset:3px; }
+.fx-gallery-count { color:#aaa; font:400 12px/1 Poppins,sans-serif; font-variant-numeric:tabular-nums; }
+@media(max-width:1024px) { .fx-gallery { max-width:520px; margin:auto; } .fx-gallery-slide { aspect-ratio:4 / 3; } }
+@media(max-width:767px) { .elementor-104161 > .elementor-element.elementor-element-2c61eaa::before { opacity:.34; } }
+@media(prefers-reduced-motion:reduce) { .fx-gallery-track { transition:none; } }
+
+/* Yellow module headers with black labels and disclosure controls. */
+.elementor-104161 .elementor-element-cec7d0a .e-n-accordion-item-title,
+.elementor-104161 .elementor-element-cec7d0a .e-n-accordion-item-title:hover {
+  background:linear-gradient(110deg,#f5d879 0%,#dfb438 55%,#c6921d 100%) !important;
+  color:#080808 !important;
+}
+.elementor-104161 .elementor-element-cec7d0a .e-n-accordion-item-title-text,
+.elementor-104161 .elementor-element-cec7d0a .e-n-accordion-item[open] .e-n-accordion-item-title-text,
+.elementor-104161 .elementor-element-cec7d0a .e-n-accordion-item-title-text > span { color:#080808 !important; }
+.elementor-104161 .elementor-element-cec7d0a .e-n-accordion-item-title-text b { font-weight:600; }
+.elementor-104161 .elementor-element-cec7d0a .e-n-accordion-item-title::after { color:#000; background:#0000000a; }
+.elementor-104161 .elementor-element-cec7d0a .e-n-accordion-item[open] { box-shadow:none; }
+.elementor-104161 .elementor-element-cec7d0a .e-n-accordion-item[open] > .e-con { padding-top:24px; }
+.elementor-104161 .elementor-element-cec7d0a summary:focus-visible { outline-color:#000; }
+.fx-hero-countdown { width:100%; margin:2px 0 4px; }
+.fx-hero-countdown > p { font:500 12px/1.6 Poppins,sans-serif; color:#e0c377; margin:0 0 12px; }
+.fx-hero-countdown .fx-timer { justify-content:flex-start; }
+.fx-hero-countdown .fx-timer > div { background:#0b0b0bd9; border-color:#d6ae4933; }
+.fx-hero-countdown .fx-timer strong { color:#f1d898; }
+.elementor-104161 .elementor-element.elementor-element-57657b0 .elementor-icon-list-icon i { color:#c9a653 !important; }
+.elementor-104161 .elementor-element.elementor-element-57657b0 .elementor-icon-list-icon svg { fill:#c9a653 !important; }
