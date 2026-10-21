@@ -1,6 +1,12 @@
 # Frotas Experience
 
-gere uma página em branco com o nome frotas experience
+Página do curso presencial de Gestão da Manutenção de Frotas e Máquinas Pesadas, importada do ZIP fornecido.
+
+A página completa está em `src/content/frotas.html`. O servidor a entrega em `/` e `/frotas-experience/`, preservando o documento original e os scripts do Elementor. Imagens, estilos, fontes e scripts locais ficam em `public/mirror/`.
+
+As fontes corrompidas na exportação foram recuperadas das suas origens. Recursos ausentes no ZIP mantêm os endereços externos originais. Formulários, vídeos, checkout e WhatsApp continuam dependendo dos serviços da página de origem.
+
+Para conferir os recursos locais, execute `node scripts/check-page-assets.mjs`. Para validar o projeto, execute `npm run build` e `npm test`.
 
 This project was built with [Lovable](https://lovable.dev).
 

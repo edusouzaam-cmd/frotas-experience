@@ -1,4 +1,5 @@
 import "./lib/error-capture";
+import frotasPage from "./content/frotas.html?raw";
 
 import { consumeLastCapturedError } from "./lib/error-capture";
 import { renderErrorPage } from "./lib/error-page";
@@ -46,6 +47,15 @@ function isH3SwallowedErrorBody(body: string): boolean {
 
 export default {
   async fetch(request: Request, env: unknown, ctx: unknown) {
+    const pathname = new URL(request.url).pathname;
+    if (
+      (request.method === "GET" || request.method === "HEAD") &&
+      (pathname === "/" || pathname === "/frotas-experience" || pathname === "/frotas-experience/")
+    ) {
+      return new Response(request.method === "HEAD" ? null : frotasPage, {
+        headers: { "content-type": "text/html; charset=utf-8" },
+      });
+    }
     try {
       const handler = await getServerEntry();
       const response = await handler.fetch(request, env, ctx);
