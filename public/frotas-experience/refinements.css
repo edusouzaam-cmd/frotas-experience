@@ -326,15 +326,11 @@ html, body { background: #000 !important; color: #ededed; }
 .elementor-104161 .elementor-element.elementor-element-57657b0 .elementor-icon-list-icon svg { fill:#c9a653 !important; }
 
 /* Continuous photo conveyor: two identical groups make a seamless loop. */
-.fx-conveyor .fx-gallery-window { border-radius:20px; overflow:hidden; }
+.fx-conveyor .fx-gallery-window { border-radius:20px; overflow:hidden !important; scrollbar-width:none; }
+.fx-conveyor .fx-gallery-window::-webkit-scrollbar { display:none; width:0; height:0; }
 .fx-conveyor .fx-gallery-track { display:flex; width:max-content; transition:none; animation:fx-photo-conveyor 42s linear infinite !important; will-change:transform; }
 .fx-gallery-group { display:flex; flex-shrink:0; gap:16px; padding-right:16px; }
 .fx-conveyor .fx-gallery-slide { flex:0 0 auto; width:clamp(260px,25vw,350px); aspect-ratio:3 / 4; overflow:hidden; border-radius:16px; }
 .fx-conveyor .fx-gallery-slide img { height:100%; width:100%; object-fit:cover; }
 @keyframes fx-photo-conveyor { from { transform:translateX(0); } to { transform:translateX(-50%); } }
 @media(max-width:767px) { .fx-conveyor .fx-gallery-slide { width:260px; } }
-@media(prefers-reduced-motion:reduce) {
-  .fx-conveyor .fx-gallery-track { animation:none !important; will-change:auto; }
-  .fx-conveyor .fx-gallery-window { overflow-x:auto; }
-  .fx-conveyor .fx-gallery-group[aria-hidden] { display:none; }
-}
