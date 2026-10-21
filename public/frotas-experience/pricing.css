@@ -1,0 +1,45 @@
+/* Fixed card widths: wrap the cards instead of stretching them with the viewport. */
+.elementor-104161 .fx-calendar-section { padding:64px 20px 28px; }
+.fx-calendar { width:min(100%,1068px); margin:auto; padding:28px 32px; display:flex; align-items:center; justify-content:space-between; gap:28px; border:1px solid #29251b; border-radius:20px; background:#0b0a07; }
+.fx-eyebrow { color:#d6ad50; font:600 11px/1.5 Poppins,sans-serif; letter-spacing:.15em; }
+.fx-calendar h2 { font:600 23px/1.35 Poppins,sans-serif; color:#f5f5f5; margin:8px 0; }
+.fx-calendar p { color:#a9a9af; font-size:13px; margin:0; }
+.fx-timer { display:flex; gap:10px; flex-shrink:0; }
+.fx-timer > div { width:66px; text-align:center; padding:12px 4px; border:1px solid #2c291e; border-radius:12px; background:#11100c; }
+.fx-timer strong { display:block; font:600 27px/1.2 Poppins,sans-serif; color:#eee; font-variant-numeric:tabular-nums; }
+.fx-timer span { display:block; margin-top:5px; font:400 10px/1.5 Poppins,sans-serif; color:#aaa; }
+.fx-pricing { width:100%; max-width:none; padding:36px 20px 72px; background:#000; color:#eee; scroll-margin-top:24px; box-sizing:border-box; }
+.fx-pricing *, .fx-calendar * { box-sizing:border-box; }
+.fx-pricing-heading { text-align:center; max-width:680px; margin:0 auto 36px; }
+.fx-pricing-heading h2 { font:600 clamp(26px,3vw,36px)/1.25 Poppins,sans-serif; color:#f6f6f6; margin:12px 0; letter-spacing:-.025em; }
+.fx-pricing-heading p { font:400 14px/1.7 Poppins,sans-serif; color:#aaa; margin:0; }
+.fx-lots { display:flex; flex-wrap:wrap; gap:24px; justify-content:center; align-items:stretch; max-width:1068px; margin:auto; }
+.fx-lot { flex:0 0 340px; width:340px; max-width:100%; min-width:0; padding:26px; border:1px solid #2b2b2b; border-radius:20px; background:linear-gradient(155deg,#111,#080808); display:flex; flex-direction:column; transition:border-color .2s; }
+.fx-lot[data-status="open"] { border-color:#c99b31; box-shadow:0 0 40px #d6a10d0c; }
+.fx-lot-top { display:flex; align-items:center; justify-content:space-between; gap:8px; min-height:24px; }
+.fx-number { font:600 11px/1.4 Poppins,sans-serif; letter-spacing:.12em; color:#d4b36a; }
+.fx-status { font:500 10px/1.4 Poppins,sans-serif; color:#bbb; background:#ffffff08; border:1px solid #ffffff12; padding:5px 8px; border-radius:100px; }
+.fx-lot[data-status="open"] .fx-status { color:#e6c979; border-color:#ad842740; background:#ad842712; }
+.fx-logo { display:block; width:88px; height:88px; object-fit:contain; margin:26px auto 18px; }
+.fx-lot h3 { font:600 23px/1.35 Poppins,sans-serif; text-align:center; color:#f5f5f5; margin:0 0 6px; }
+.fx-period { font:400 12px/1.6 Poppins,sans-serif; text-align:center; color:#a7a7ac; margin:0; min-height:20px; }
+.fx-price { text-align:center; display:grid; gap:5px; margin:24px 0 8px; }
+.fx-price > span { font:400 13px/1.6 Poppins,sans-serif; color:#b4b4ba; }
+.fx-price strong { font:600 39px/1.2 Poppins,sans-serif; color:#f1ce7a; letter-spacing:-.04em; white-space:nowrap; }
+.fx-price b { font-weight:500; color:#eee; }
+.fx-installment { font:400 10px/1.7 Poppins,sans-serif; color:#8f8f97; text-align:center; margin:0 0 24px; }
+.fx-lot ul { list-style:none; padding:20px 0; margin:0 0 24px; border-block:1px solid #ffffff12; display:grid; gap:14px; }
+.fx-lot li { display:flex; align-items:flex-start; gap:10px; font:400 12px/1.65 Poppins,sans-serif; color:#c9c9ce; }
+.fx-lot li > span { color:#d6ad50; }
+.fx-action { margin-top:auto; }
+.fx-action a, .fx-unavailable { display:flex; width:100%; min-height:48px; padding:13px 10px; align-items:center; justify-content:center; border-radius:11px; font:600 12px/1.5 Poppins,sans-serif; text-align:center; }
+.fx-action a { background:#d7a323; color:#090909; text-decoration:none; }
+.fx-action a:hover { background:#e7b940; }
+.fx-action a:focus-visible { outline:2px solid #fff; outline-offset:4px; }
+.fx-unavailable { background:#171717; border:1px solid #303030; color:#9a9aa2; }
+.fx-footnote { font:400 10px/1.6 Poppins,sans-serif; text-align:center; color:#808087; margin:14px 0 0; }
+.fx-trust { text-align:center; font:400 11px/1.7 Poppins,sans-serif; color:#8f8f97; margin:28px auto 0; }
+@media(max-width:800px) { .fx-calendar { flex-direction:column; text-align:center; padding:24px 20px; } }
+@media(max-width:379px) { .fx-lot { flex-basis:100%; padding:22px; } .fx-timer { gap:7px; } .fx-timer > div { width:56px; } }
+.fx-timer[hidden] { display:none; }
+@media(prefers-reduced-motion:reduce) { .fx-lot { transition:none; } }
