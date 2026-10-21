@@ -150,3 +150,72 @@ html, body { background: #000 !important; color: #ededed; }
   .elementor-104161 .elementor-element.elementor-element-ed4b64f { margin:0; }
   .elementor-104161 .elementor-element.elementor-element-fdeff59 { padding-top:12px; }
 }
+
+/* Quiet, borderless syllabus panels; gold is reserved for interaction. */
+.elementor-104161 .elementor-element-cec7d0a .e-n-accordion { gap:12px; }
+.elementor-104161 .elementor-element-cec7d0a .e-n-accordion-item {
+  border:0 !important; outline:0; border-radius:14px; background:#0d0d0f;
+  box-shadow:none; --border-width:0px; --border-color:transparent;
+}
+.elementor-104161 .elementor-element-cec7d0a .e-n-accordion-item-title {
+  border:0 !important; border-radius:0; outline:0; background:transparent !important;
+  padding:24px 28px; min-height:90px; gap:24px; list-style:none;
+  box-shadow:none; transition:background .2s ease;
+}
+.elementor-104161 .elementor-element-cec7d0a .e-n-accordion-item-title::-webkit-details-marker { display:none; }
+.elementor-104161 .elementor-element-cec7d0a .e-n-accordion-item-title:hover { background:#141416 !important; }
+.elementor-104161 .elementor-element-cec7d0a .e-n-accordion-item-title-header { flex:1; min-width:0; }
+.elementor-104161 .elementor-element-cec7d0a .e-n-accordion-item-title-text { color:#e1e1e5 !important; font-size:14px; line-height:1.55; letter-spacing:0; }
+.elementor-104161 .elementor-element-cec7d0a .e-n-accordion-item-title-text b { font-weight:500; }
+.elementor-104161 .elementor-element-cec7d0a .e-n-accordion-item-title-text > span { display:inline-block; color:#a78c4f; font-size:10px !important; letter-spacing:.14em; margin-bottom:4px; }
+.elementor-104161 .elementor-element-cec7d0a .e-n-accordion-item-title-icon { display:none; }
+.elementor-104161 .elementor-element-cec7d0a .e-n-accordion-item-title::after { content:'+'; display:grid; place-items:center; flex:0 0 28px; width:28px; height:28px; border-radius:50%; background:#c8a4580d; color:#c8a458; font:400 22px/1 Poppins,sans-serif; }
+.elementor-104161 .elementor-element-cec7d0a .e-n-accordion-item[open] { background:#111113; box-shadow:inset 2px 0 #a48645; }
+.elementor-104161 .elementor-element-cec7d0a .e-n-accordion-item[open] > summary::after { content:'−'; }
+.elementor-104161 .elementor-element-cec7d0a .e-n-accordion-item[open] .e-n-accordion-item-title-text { color:#f3e6c7 !important; }
+.elementor-104161 .elementor-element-cec7d0a .e-n-accordion-item > .e-con { border:0 !important; background:transparent !important; padding:0 28px 28px; }
+.elementor-104161 .elementor-element-cec7d0a summary:focus-visible { outline:2px solid #b99951; outline-offset:-3px; border-radius:14px; }
+.elementor-104161 .elementor-element-8790f1b { margin-bottom:28px; }
+@media(max-width:767px) {
+  .elementor-104161 .elementor-element-cec7d0a .e-n-accordion-item-title { padding:20px; gap:16px; }
+  .elementor-104161 .elementor-element-cec7d0a .e-n-accordion-item-title-text { font-size:13px; }
+  .elementor-104161 .elementor-element-cec7d0a .e-n-accordion-item > .e-con { padding:0 20px 24px; }
+}
+
+/* Hero: copy on the left, original event mark on the right. */
+.elementor-104161 > .elementor-element.elementor-element-2c61eaa {
+  display:grid; grid-template-columns:minmax(0,600px) minmax(0,440px); justify-content:center;
+  align-items:center; gap:64px; padding-block:88px; min-height:720px;
+  position:relative; isolation:isolate; overflow:hidden;
+}
+.elementor-104161 > .elementor-element.elementor-element-2c61eaa::before {
+  content:''; position:absolute; inset:0; z-index:-2; pointer-events:none;
+  background:url('/images/header-mineracao.webp') center / cover no-repeat !important; opacity:.22;
+}
+.elementor-104161 > .elementor-element.elementor-element-2c61eaa::after {
+  content:''; position:absolute; inset:0; z-index:-1; pointer-events:none;
+  background:linear-gradient(90deg,#0009,#0004 65%,#0008),linear-gradient(0deg,#000,transparent 35%,#0004);
+}
+.elementor-104161 .elementor-element.elementor-element-d392b37 { grid-column:1; grid-row:1; width:100%; --width:100%; align-items:flex-start; margin:0; padding:0; gap:22px; }
+.elementor-104161 .elementor-element.elementor-element-436f7e6 { grid-column:2; grid-row:1; width:100%; --width:100%; margin:0 !important; padding:0; }
+.elementor-104161 .elementor-element.elementor-element-ed4b64f { margin:0; }
+.elementor-104161 .elementor-element.elementor-element-436f7e6 img { display:block; width:100%; max-width:440px; height:auto; max-height:none; object-fit:contain; margin:auto; }
+.elementor-104161 .elementor-element.elementor-element-d392b37 > .elementor-widget { width:100%; margin:0; text-align:left; }
+.elementor-104161 .elementor-element.elementor-element-fdeff59 { padding:0; font-size:11px; letter-spacing:.16em; }
+.elementor-104161 .elementor-element.elementor-element-9dbfd66 .elementor-heading-title { font-size:clamp(34px,4.1vw,56px); line-height:1.12; text-align:left; }
+.elementor-104161 .elementor-element.elementor-element-e975664 .elementor-icon-list-items { display:flex; flex-wrap:wrap; gap:12px 24px; }
+.elementor-104161 .elementor-element.elementor-element-e975664 .elementor-icon-list-item { justify-content:flex-start; margin:0; }
+.elementor-104161 .elementor-element.elementor-element-e975664 .elementor-icon-list-text { font-size:17px; }
+.elementor-104161 .elementor-element.elementor-element-130ee57 { max-width:540px; font-size:16px; line-height:1.75; color:#c2c2c8; }
+.elementor-104161 .elementor-element.elementor-element-c6f690c .elementor-button { font-size:15px; border-radius:12px; padding:17px 24px; }
+@media(max-width:1024px) {
+  .elementor-104161 > .elementor-element.elementor-element-2c61eaa { grid-template-columns:minmax(0,1.25fr) minmax(0,1fr); gap:32px; padding-block:64px; min-height:640px; }
+}
+@media(max-width:767px) {
+  .elementor-104161 > .elementor-element.elementor-element-2c61eaa { grid-template-columns:minmax(0,1fr); gap:36px; min-height:0; padding-block:48px; }
+  .elementor-104161 .elementor-element.elementor-element-d392b37 { grid-column:1; grid-row:1; gap:20px; }
+  .elementor-104161 .elementor-element.elementor-element-436f7e6 { grid-column:1; grid-row:2; }
+  .elementor-104161 .elementor-element.elementor-element-436f7e6 img { max-width:240px; }
+  .elementor-104161 .elementor-element.elementor-element-9dbfd66 .elementor-heading-title { font-size:34px; }
+  .elementor-104161 > .elementor-element.elementor-element-2c61eaa::before { background-position:35% center !important; opacity:.18; }
+}
