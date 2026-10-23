@@ -417,3 +417,17 @@ html, body { background: #000 !important; color: #ededed; }
  .elementor-104161 .elementor-element-59d5b9a .elementor-icon-box-content { grid-template-rows:auto auto; }
  .elementor-104161 .elementor-element-59d5b9a .elementor-icon-box-title { height:auto; min-height:0; }
 }
+
+/* Larger pill-shaped hero action with a deep-gold to yellow gradient. */
+.elementor-104161 .elementor-element.elementor-element-c6f690c .elementor-button {
+ display:inline-flex; align-items:center; justify-content:center; min-height:68px; max-width:100%;
+ padding:22px 42px; border-radius:999px !important; border:1px solid #e4ba4a80;
+ background:linear-gradient(110deg,#302100 0%,#b7820e 25%,#dfb438 58%,#f5d879 100%) !important;
+ color:#080808 !important; fill:#080808 !important; font-size:18px; font-weight:700; line-height:1.4;
+ box-shadow:0 8px 28px #d6a10d26; transition:box-shadow .2s ease,transform .2s ease;
+}
+.elementor-104161 .elementor-element.elementor-element-c6f690c .elementor-button:hover { box-shadow:0 10px 34px #d6a10d40; transform:translateY(-2px); }
+.elementor-104161 .elementor-element.elementor-element-c6f690c .elementor-button:focus-visible { outline:2px solid #f5d879; outline-offset:5px; }
+@media(max-width:767px) {
+ .elementor-104161 .elementor-element.elementor-element-c6f690c .elementor-button { width:100%; padding:20px 26px; min-height:64px; font-size:17px; }
+}
