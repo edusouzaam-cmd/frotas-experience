@@ -6,12 +6,10 @@
   const timers = document.querySelectorAll('.fx-timer');
   function update() {
     const now = Date.now();
-    const active = lots.find(lot => now >= Date.parse(lot.opensAt) && now < Date.parse(lot.closesAt));
-    const next = lots.find(lot => now < Date.parse(lot.opensAt));
-    const target = active ? Date.parse(active.closesAt) : next ? Date.parse(next.opensAt) : null;
-    const label = active ? (active.id === 3 ? 'As inscrições encerram em' : 'O próximo lote começa em') : next ? 'As inscrições abrem em 26 de outubro' : 'Inscrições encerradas para esta turma';
+    const target = Date.parse('2026-11-23T00:00:00-03:00');
+    const label = now < target ? 'O primeiro lote encerra em' : 'Primeiro lote encerrado';
     titles.forEach(title => { if (title.textContent !== label) title.textContent = label; });
-    timers.forEach(timer => { timer.hidden = target === null; });
+    timers.forEach(timer => { timer.hidden = false; });
     if (target !== null) {
       const seconds = Math.max(0, Math.ceil((target - now) / 1000));
       const remaining = [Math.floor(seconds / 86400), Math.floor(seconds / 3600) % 24, Math.floor(seconds / 60) % 60, seconds % 60];
