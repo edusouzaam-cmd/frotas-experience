@@ -404,3 +404,16 @@ html, body { background: #000 !important; color: #ededed; }
 
 /* Darken only the header photograph by 15% for clearer text. */
 .elementor-104161 > .elementor-element.elementor-element-2c61eaa::before { filter:brightness(.85); }
+
+/* Keep each benefit on one shared axis with matching title rows. */
+.elementor-104161 .elementor-element-59d5b9a .elementor-widget.elementor-widget-icon-box { --icon-box-icon-margin:0; }
+.elementor-104161 .elementor-element-59d5b9a .elementor-icon-box-wrapper { display:grid; grid-template-columns:minmax(0,1fr); grid-template-rows:76px auto; justify-items:center; align-items:start; gap:22px; width:100%; }
+.elementor-104161 .elementor-element-59d5b9a .elementor-icon-box-icon { display:flex; justify-content:center; align-items:center; justify-self:center; align-self:start; width:100%; margin:0 !important; padding:0; }
+.elementor-104161 .elementor-element-59d5b9a .elementor-icon-box-icon .elementor-icon { display:flex; flex:0 0 88px; width:88px; height:76px; margin:0 !important; }
+.elementor-104161 .elementor-element-59d5b9a .elementor-icon-box-content { display:grid; grid-template-rows:44px auto; gap:12px; width:100%; text-align:center; }
+.elementor-104161 .elementor-element-59d5b9a .elementor-icon-box-title { height:44px; min-height:44px; margin:0; display:flex; align-items:center; justify-content:center; }
+.elementor-104161 .elementor-element-59d5b9a .elementor-icon-box-description { margin:0 auto; }
+@media(max-width:479px) {
+ .elementor-104161 .elementor-element-59d5b9a .elementor-icon-box-content { grid-template-rows:auto auto; }
+ .elementor-104161 .elementor-element-59d5b9a .elementor-icon-box-title { height:auto; min-height:0; }
+}
