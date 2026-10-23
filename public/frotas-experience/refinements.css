@@ -368,10 +368,12 @@ html, body { background: #000 !important; color: #ededed; }
 
 /* Larger immersion statement with a compact transition to the curriculum. */
 .elementor-104161 .elementor-element.elementor-element-0c91ddd { width:100%; max-width:100%; --width:100%; margin-bottom:0; }
-.elementor-104161 .elementor-element.elementor-element-0c91ddd .elementor-heading-title { font-size:clamp(22px,2.2vw,28px); line-height:1.4; max-width:1000px; margin:0 auto; text-align:center; text-wrap:balance; }
+.elementor-104161 .elementor-element.elementor-element-0c91ddd .elementor-heading-title { font-size:clamp(24px,2.5vw,32px); line-height:1.4; max-width:1000px; margin:0 auto; text-align:center; text-wrap:balance; }
 .elementor-104161 > .elementor-element.elementor-element-701bad6 { padding-bottom:24px; }
 .elementor-104161 > .elementor-element.elementor-element-88ae495 { padding-top:24px; }
 @media(min-width:1025px) {
  .elementor-104161 .elementor-element.elementor-element-0c91ddd .elementor-heading-title { max-width:100%; }
- .fx-immersion-line { display:block; white-space:nowrap; }
+ .fx-immersion-line { display:block; }
 }
+
+.elementor-104161 .elementor-element-0c91ddd .fx-immersion-highlight { color:#f0c64c; font-weight:700; }
