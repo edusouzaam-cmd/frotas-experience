@@ -1,12 +1,12 @@
 export const event = {
-  date: "27, 28 e 29 de janeiro de 2027",
+  date: "22, 23 e 24 de janeiro de 2027",
   location: "Brasília · DF",
   venue: "Ed. E-Business · Águas Claras",
   address: "Av. Pau Brasil, nº 6, 1º andar (auditório), Águas Claras, Brasília–DF. CEP 71916-500.",
   whatsapp:
     "https://wa.me/5555619965027?text=" +
     encodeURIComponent(
-      "Olá! Quero saber mais sobre o Frotas Experience de 27 a 29 de janeiro de 2027, em Brasília.",
+      "Olá! Quero saber mais sobre o Frotas Experience de 22 a 24 de janeiro de 2027, em Brasília.",
     ),
 } as const;
 
