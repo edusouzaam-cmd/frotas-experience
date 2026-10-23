@@ -431,3 +431,8 @@ html, body { background: #000 !important; color: #ededed; }
 @media(max-width:767px) {
  .elementor-104161 .elementor-element.elementor-element-c6f690c .elementor-button { width:100%; padding:20px 26px; min-height:64px; font-size:17px; }
 }
+
+/* Compact spacing between course benefits and student testimonials. */
+.elementor-104161 > .elementor-element.elementor-element-61d4bb6 { padding-bottom:24px; margin-bottom:0; }
+.elementor-104161 .elementor-element.elementor-element-59d5b9a { margin-bottom:0; padding-bottom:0; }
+.elementor-104161 > .elementor-element.elementor-element-e9b68d9 { padding-top:24px; margin-top:0; }
