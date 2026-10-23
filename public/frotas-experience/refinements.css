@@ -344,14 +344,16 @@ html, body { background: #000 !important; color: #ededed; }
 .fx-bonus-copy .fx-bonus-price { margin:26px 0 6px; font-size:16px; color:#aaa; }
 .fx-bonus-price s { margin-left:6px; font-size:24px; color:#b4b4b4; }
 .fx-bonus-copy .fx-bonus-free { color:#f0c64c; font-size:clamp(24px,2.5vw,32px); line-height:1.3; font-weight:700; margin:0; }
-.fx-bonus-visual { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:0; min-width:0; }
+.fx-bonus-copy { grid-column:2; grid-row:1; min-width:0; }
+.fx-bonus-visual { grid-column:1; grid-row:1; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:0; min-width:0; }
 .fx-bonus-visual img { display:block; object-fit:contain; height:auto; }
-.fx-bonus-visual .fx-bonus-logo { width:170px; }
-.fx-bonus-visual .fx-bonus-notebook { width:100%; max-width:390px; }
+.fx-bonus-copy .fx-bonus-logo { display:block; width:150px; max-width:100%; height:auto; object-fit:contain; margin:24px auto 0; }
+.fx-bonus-visual .fx-bonus-notebook { width:100%; max-width:480px; }
 @media(max-width:767px) {
  .elementor-104161 .fx-bonus-two { grid-template-columns:1fr; gap:24px; padding:28px 22px; width:calc(100% - 32px); }
- .fx-bonus-visual { grid-row:1; }
- .fx-bonus-visual .fx-bonus-logo { width:140px; }
- .fx-bonus-visual .fx-bonus-notebook { max-width:300px; }
+ .fx-bonus-copy { grid-column:1; grid-row:1; }
+ .fx-bonus-visual { grid-column:1; grid-row:2; }
+ .fx-bonus-copy .fx-bonus-logo { width:130px; }
+ .fx-bonus-visual .fx-bonus-notebook { max-width:380px; }
  .fx-bonus-copy h2 { font-size:25px; }
 }
