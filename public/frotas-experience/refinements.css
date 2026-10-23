@@ -397,3 +397,7 @@ html, body { background: #000 !important; color: #ededed; }
  .elementor-104161 .elementor-element-59d5b9a .elementor-icon-box-title { min-height:0; }
  .elementor-104161 .elementor-element-59d5b9a .elementor-icon-box-description { max-width:320px; }
 }
+
+/* Center benefit icons above the copy and enrich their gold frames. */
+.elementor-104161 .elementor-element-59d5b9a .elementor-icon-box-icon { display:flex; justify-content:center; align-self:center; width:100%; margin:0 0 22px; text-align:center; }
+.elementor-104161 .elementor-element-59d5b9a .elementor-icon-box-icon .elementor-icon { flex:0 0 auto; margin:0 auto; border:1px solid transparent; background:linear-gradient(145deg,#29220f,#100e08) padding-box,linear-gradient(135deg,#f3d47d,#a67a17 55%,#e5bc49) border-box; box-shadow:0 6px 22px #d5b3610d; }
