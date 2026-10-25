@@ -40,7 +40,7 @@ for (const page of pages) {
     .replace(/<link\b[^>]*rel=["']?(?:icon|apple-touch-icon)["']?[^>]*>/gi, '');
   const metadata = `<link rel="canonical" href="${url}"><meta property="og:url" content="${url}"><link rel="icon" href="${base}favicon.ico?v=frotas-20261025">`;
   html = html.replace('</head>', metadata + '</head>');
-  if (page !== 'index.html') {
+  if (page !== 'index.html' && !/<meta\b[^>]*name=["']?description/i.test(html)) {
     const title = page.startsWith('termos') ? 'Termos de Uso' : 'Política de Privacidade';
     html = html.replace('</head>', `<meta name="description" content="${title} do Frotas Experience, promovido pela ENGETELES."></head>`);
   }

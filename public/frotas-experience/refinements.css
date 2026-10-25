@@ -436,3 +436,9 @@ html, body { background: #000 !important; color: #ededed; }
 .elementor-104161 > .elementor-element.elementor-element-61d4bb6 { padding-bottom:24px; margin-bottom:0; }
 .elementor-104161 .elementor-element.elementor-element-59d5b9a { margin-bottom:0; padding-bottom:0; }
 .elementor-104161 > .elementor-element.elementor-element-e9b68d9 { padding-top:24px; margin-top:0; }
+
+/* Legal navigation in the existing footer. */
+.fx-legal-links { display:flex; flex-wrap:wrap; justify-content:center; gap:8px 24px; margin:20px 0 12px; }
+.fx-legal-links a { display:inline-flex; align-items:center; min-height:44px; color:#d6b45d; font:400 13px/1.6 Poppins,sans-serif; text-decoration:underline; text-underline-offset:4px; }
+.fx-legal-links a:hover { color:#ffe89a; }
+.fx-legal-links a:focus-visible { outline:2px solid #ffe89a; outline-offset:4px; border-radius:3px; }
