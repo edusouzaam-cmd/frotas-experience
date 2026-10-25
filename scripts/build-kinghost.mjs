@@ -38,7 +38,7 @@ for (const page of pages) {
   html = html.replace(/<link\b[^>]*rel=["']?canonical["']?[^>]*>/gi, '')
     .replace(/<meta\b[^>]*property=["']?og:url["']?[^>]*>/gi, '')
     .replace(/<link\b[^>]*rel=["']?(?:icon|apple-touch-icon)["']?[^>]*>/gi, '');
-  const metadata = `<link rel="canonical" href="${url}"><meta property="og:url" content="${url}"><link rel="icon" href="${base}favicon.ico">`;
+  const metadata = `<link rel="canonical" href="${url}"><meta property="og:url" content="${url}"><link rel="icon" href="${base}favicon.ico?v=frotas-20261025">`;
   html = html.replace('</head>', metadata + '</head>');
   if (page !== 'index.html') {
     const title = page.startsWith('termos') ? 'Termos de Uso' : 'Política de Privacidade';
