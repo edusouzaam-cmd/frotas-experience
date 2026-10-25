@@ -37,6 +37,10 @@
 .fx-action a:hover { background:#e7b940; }
 .fx-action a:focus-visible { outline:2px solid #fff; outline-offset:4px; }
 .fx-unavailable { background:#171717; border:1px solid #303030; color:#9a9aa2; }
+/* Green action for the first lot, including its upcoming availability state. */
+.fx-lot[data-lot="1"] .fx-action a,
+.fx-lot[data-lot="1"] .fx-unavailable { background:#15803d; border:1px solid #15803d; color:#fff; }
+.fx-lot[data-lot="1"] .fx-action a:hover { background:#166534; border-color:#166534; }
 .fx-footnote { font:400 10px/1.6 Poppins,sans-serif; text-align:center; color:#808087; margin:14px 0 0; }
 .fx-trust { text-align:center; font:400 11px/1.7 Poppins,sans-serif; color:#8f8f97; margin:28px auto 0; }
 @media(max-width:800px) { .fx-calendar { flex-direction:column; text-align:center; padding:24px 20px; } }
