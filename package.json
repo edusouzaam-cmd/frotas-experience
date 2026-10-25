@@ -11,7 +11,8 @@
     "lint": "eslint .",
     "format": "prettier --write .",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "build:kinghost": "node scripts/build-kinghost.mjs && node scripts/validate-kinghost.mjs"
   },
   "overrides": {
     "rolldown": "1.2.1"
