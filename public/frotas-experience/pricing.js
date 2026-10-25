@@ -17,7 +17,7 @@
     }
     lots.forEach(lot => {
       const card = document.querySelector(`.fx-lot[data-lot="${lot.id}"]`);
-      const status = now < Date.parse(lot.opensAt) ? 'upcoming' : now < Date.parse(lot.closesAt) ? 'open' : 'closed';
+      const status = now >= Date.parse(lot.closesAt) ? 'closed' : lot.id === 1 || now >= Date.parse(lot.opensAt) ? 'open' : 'upcoming';
       if (card.dataset.status === status) return;
       card.dataset.status = status;
       card.querySelector('.fx-status').textContent = status === 'open' ? 'Inscrições abertas' : status === 'closed' ? 'Encerrado' : `A partir de ${lot.openLabel}`;
