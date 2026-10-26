@@ -37,24 +37,29 @@
 .fx-action a:hover { background:#e7b940; }
 .fx-action a:focus-visible { outline:2px solid #fff; outline-offset:4px; }
 .fx-unavailable { background:#171717; border:1px solid #303030; color:#9a9aa2; }
-/* Glossy green action scoped to the first lot. */
+/* First-lot CTA: luminous green capsule matching the reference. */
 .fx-lot[data-lot="1"] .fx-action a,
 .fx-lot[data-lot="1"] .fx-unavailable {
+  min-height:64px;
+  padding:18px 22px;
+  gap:16px;
   border-radius:999px;
-  border:1px solid #4ade80;
-  background:
-    linear-gradient(180deg, #ffffff38 0%, #ffffff0a 46%, #ffffff00 50%),
-    linear-gradient(135deg, #22c55e 0%, #16a34a 55%, #15803d 100%);
-  color:#fff;
-  text-shadow:0 1px 2px #064e3b99;
-  box-shadow:inset 0 1px 0 #ffffff80, inset 0 -2px 4px #064e3b45, 0 5px 20px #22c55e35;
+  border:1px solid #a3f578;
+  background:linear-gradient(105deg,#174d13 0%,#4bbd24 32%,#8ce34f 68%,#c0f586 100%);
+  color:#071b05;
+  font-size:14px;
+  font-weight:700;
+  text-shadow:none;
+  box-shadow:inset 0 1px 1px #ffffff75, inset 0 -1px 2px #1c6e1840, 0 6px 24px #65dd292b;
 }
-.fx-lot[data-lot="1"] .fx-action a {
-  transition:filter .2s, box-shadow .2s;
+.fx-lot[data-lot="1"] .fx-action a::before {
+  content:"→";
+  font:500 25px/1 Poppins,sans-serif;
 }
+.fx-lot[data-lot="1"] .fx-action a { transition:filter .2s, box-shadow .2s; }
 .fx-lot[data-lot="1"] .fx-action a:hover {
-  filter:brightness(1.1);
-  box-shadow:inset 0 1px 0 #ffffff99, inset 0 -2px 4px #064e3b45, 0 6px 24px #22c55e55;
+  filter:brightness(1.08);
+  box-shadow:inset 0 1px 1px #ffffff99, 0 6px 28px #65dd2945;
 }
 @media(prefers-reduced-motion:reduce) {
   .fx-lot[data-lot="1"] .fx-action a { transition:none; }
