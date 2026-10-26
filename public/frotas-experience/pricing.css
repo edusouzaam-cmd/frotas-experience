@@ -37,10 +37,28 @@
 .fx-action a:hover { background:#e7b940; }
 .fx-action a:focus-visible { outline:2px solid #fff; outline-offset:4px; }
 .fx-unavailable { background:#171717; border:1px solid #303030; color:#9a9aa2; }
-/* Green action for the first lot, including its upcoming availability state. */
+/* Glossy green action scoped to the first lot. */
 .fx-lot[data-lot="1"] .fx-action a,
-.fx-lot[data-lot="1"] .fx-unavailable { background:#15803d; border:1px solid #15803d; color:#fff; }
-.fx-lot[data-lot="1"] .fx-action a:hover { background:#166534; border-color:#166534; }
+.fx-lot[data-lot="1"] .fx-unavailable {
+  border-radius:999px;
+  border:1px solid #4ade80;
+  background:
+    linear-gradient(180deg, #ffffff38 0%, #ffffff0a 46%, #ffffff00 50%),
+    linear-gradient(135deg, #22c55e 0%, #16a34a 55%, #15803d 100%);
+  color:#fff;
+  text-shadow:0 1px 2px #064e3b99;
+  box-shadow:inset 0 1px 0 #ffffff80, inset 0 -2px 4px #064e3b45, 0 5px 20px #22c55e35;
+}
+.fx-lot[data-lot="1"] .fx-action a {
+  transition:filter .2s, box-shadow .2s;
+}
+.fx-lot[data-lot="1"] .fx-action a:hover {
+  filter:brightness(1.1);
+  box-shadow:inset 0 1px 0 #ffffff99, inset 0 -2px 4px #064e3b45, 0 6px 24px #22c55e55;
+}
+@media(prefers-reduced-motion:reduce) {
+  .fx-lot[data-lot="1"] .fx-action a { transition:none; }
+}
 .fx-footnote { font:400 10px/1.6 Poppins,sans-serif; text-align:center; color:#808087; margin:14px 0 0; }
 .fx-trust { text-align:center; font:400 11px/1.7 Poppins,sans-serif; color:#8f8f97; margin:28px auto 0; }
 @media(max-width:800px) { .fx-calendar { flex-direction:column; text-align:center; padding:24px 20px; } }
