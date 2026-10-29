@@ -4,7 +4,7 @@ export const event = {
   venue: "Ed. E-Business · Águas Claras",
   address: "Av. Pau Brasil, nº 6, 1º andar (auditório), Águas Claras, Brasília–DF. CEP 71916-500.",
   whatsapp:
-    "https://wa.me/5555619965027?text=" +
+    "https://wa.me/5561996502757?text=" +
     encodeURIComponent(
       "Olá! Quero saber mais sobre o Frotas Experience de 22 a 24 de janeiro de 2027, em Brasília.",
     ),
