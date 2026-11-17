@@ -1,0 +1,40 @@
+name: Pacote WordPress
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  package:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+      # A página é HTML estático: o exportador usa só APIs nativas do Node.
+      - name: Gerar e validar páginas estáticas
+        run: |
+          node scripts/build-kinghost.mjs
+          node scripts/validate-kinghost.mjs
+      - name: Validar PHP
+        run: |
+          php -l wordpress-plugin/engeteles-frotas-experience/engeteles-frotas-experience.php
+          php -l wordpress-plugin/engeteles-frotas-experience/uninstall.php
+      - name: Gerar plugin WordPress
+        run: python3 wordpress-plugin/build.py
+      # O GitHub já compacta o artefato: envia a pasta do plugin (não o .zip)
+      # para que o arquivo baixado seja o plugin pronto para o WordPress.
+      - name: Preparar pasta do artefato
+        run: |
+          mkdir -p artefato
+          cp -r dist/wordpress/engeteles-frotas-experience artefato/
+      - uses: actions/upload-artifact@v7
+        with:
+          name: engeteles-frotas-experience
+          path: artefato/*
+          if-no-files-found: error
+          compression-level: 9
+          retention-days: 30
